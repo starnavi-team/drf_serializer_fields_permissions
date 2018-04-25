@@ -3,7 +3,7 @@ from rest_framework import serializers
 from .models import Project
 from .permissions import TeamMemberOrHide
 
-from django_rest_fields_permissions_package.fields_permissions.mixins import FieldPermissionMixin
+from fields_permissions.mixins import FieldPermissionMixin
 
 
 class ProjectSerializer(FieldPermissionMixin, serializers.ModelSerializer):
