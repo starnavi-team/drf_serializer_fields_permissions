@@ -8,8 +8,7 @@ from rest_framework import status
 from .models import Project
 
 
-class FieldPermissionTest(APITestCase):
-
+class BaseTestingClass(APITestCase):
     def setUp(self):
         self.team_lead = User.objects.create(username='team_lead', password=make_password('qwerty123'),
                                              is_superuser=True, is_staff=True)
@@ -24,8 +23,8 @@ class FieldPermissionTest(APITestCase):
             team_lead_user=self.team_lead
         )
 
-    def tearDown(self):
-        self.client.logout()
+
+class ShowOnlyFieldPermissionTest(BaseTestingClass):
 
     def test_showing_field_for_team_lead(self):
         self.client.force_login(user=self.team_lead)
@@ -44,6 +43,9 @@ class FieldPermissionTest(APITestCase):
         response = self.client.get('/api/projects/')
         team_lead_user = response.data[0].get('team_lead_user')
         self.assertIsNone(team_lead_user)
+
+
+class FieldPermissionTest(BaseTestingClass):
 
     def test_edit_status_field_for_team_lead(self):
         self.client.force_login(user=self.team_lead)
