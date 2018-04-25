@@ -8,7 +8,7 @@ from setuptools import setup
 
 name = 'django_rest_fields_permissions'
 package = 'fields_permissions'
-description = 'Знімок Permissions for django-rest fields'
+description = 'Permissions for django-rest fields'
 url = 'https://github.com/AndriiPidlisnyi/django_rest_fields_permissions_package'
 author = 'Andrii Pidlisnyi'
 author_email = 'andrii.pidlisnyi@gmail.com'
