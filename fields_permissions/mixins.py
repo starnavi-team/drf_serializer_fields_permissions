@@ -22,9 +22,10 @@ class _permission_field_iterator:
 
         permission_instance = permission_class()
 
-        assert hasattr(permission_class, 'has_permission'), \
-            'Permission class "{class_name}" should implement "has_permission" method of BasePermission class' \
-                .format(class_name=permission_instance.__class__.__name__)
+        assert hasattr(permission_class,
+                       'has_permission'), 'Permission class "{class_name}" should implement "has_permission" method' \
+                                          ' of BasePermission class'.format(
+            class_name=permission_instance.__class__.__name__)
 
         if not permission_instance.has_permission(self.request, self.view):
             return field
