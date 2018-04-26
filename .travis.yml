@@ -3,7 +3,7 @@ language: python
 sudo: false
 
 env:
-    - TOX_ENV=py36
+    - TOX_ENV='py36'
 
 matrix:
   fast_finish: true
