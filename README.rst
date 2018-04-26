@@ -77,6 +77,6 @@ To build the documentation:
 .. _tox: http://tox.readthedocs.org/en/latest/
 
 .. |build-status-image| image:: https://secure.travis-ci.org/AndriiPidlisnyi/django_rest_fields_permissions_package.svg?branch=master
-   :target: http://travis-ci.org/AndriiPidlisnyi/django_rest_fields_permissions_package?branch=master
+   :target: http://travis-ci.org/AndriiPidlisnyi/django_rest_fields_permissions_test?branch=master
 .. |pypi-version| image:: https://img.shields.io/pypi/v/django_rest_fields_permissions.svg
    :target: https://pypi.python.org/pypi/django_rest_fields_permissions
