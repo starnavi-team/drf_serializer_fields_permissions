@@ -1,6 +1,6 @@
 <div class="badges">
-    <a href="http://travis-ci.org/AndriiPidlisnyi/django_rest_fields_permissions_package">
-        <img src="https://travis-ci.org/AndriiPidlisnyi/django_rest_fields_permissions_package.svg?branch=master">
+    <a href="http://travis-ci.org/AndriiPidlisnyi/django_rest_fields_permission_test">
+        <img src="https://travis-ci.org/AndriiPidlisnyi/django_rest_fields_permission_test.svg?branch=master">
     </a>
     <a href="https://pypi.python.org/pypi/django_rest_fields_permissions">
         <img src="https://img.shields.io/pypi/v/django_rest_fields_permissions.svg">
