@@ -11,13 +11,13 @@
 
 # django_rest_fields_permissions
 
-Знімок Permissions for django-rest fields
+Permissions for django-rest fields
 
 ---
 
 ## Overview
 
-Знімок Permissions for django-rest fields
+Permissions for django-rest fields
 
 ## Requirements
 

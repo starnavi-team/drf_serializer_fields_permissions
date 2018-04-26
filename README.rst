@@ -6,7 +6,7 @@ django_rest_fields_permissions
 Overview
 --------
 
-Знімок Permissions for django-rest fields
+Permissions for django-rest fields
 
 Requirements
 ------------
