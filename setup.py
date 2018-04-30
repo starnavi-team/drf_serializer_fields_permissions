@@ -74,7 +74,11 @@ setup(
     author_email=author_email,
     packages=get_packages(package),
     package_data=get_package_data(package),
-    install_requires=[],
+    install_requires=[
+        'Django>=2.0.4',
+        'djangorestframework>=3.8.2',
+        'pytz>=2018.4',
+    ],
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Environment :: Web Environment',
