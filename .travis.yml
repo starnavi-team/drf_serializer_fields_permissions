@@ -1,14 +1,13 @@
 language: python
-python:
-  - "3.6"
 
 sudo: false
 
-env:
-    - TOX_ENV=py36
-
 matrix:
-  fast_finish: true
+  include:
+    - python: "3.5"
+      env: TOX_ENV=py35-django2.0-drf3.8
+    - python: "3.6"
+      env: TOX_ENV=py36-django2.0-drf3.8
 
 install:
   - pip install tox
