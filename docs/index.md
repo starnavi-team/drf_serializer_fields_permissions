@@ -21,8 +21,9 @@ Permissions for django-rest fields
 
 ## Requirements
 
-* Python (2.7, 3.3, 3.4)
-* Django (1.6, 1.7)
+*  Python (3.5, 3.6)
+*  Django (2.0)
+*  Django REST Framework (3.8)
 
 ## Installation
 
