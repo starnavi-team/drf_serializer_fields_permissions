@@ -28,6 +28,7 @@ Example
 -------
 
 .. code:: python
+   
    from rest_framework import serializers
 
    from fields_permissions.mixins import FieldPermissionMixin
