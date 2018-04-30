@@ -2,7 +2,7 @@ from rest_framework import status
 from rest_framework.reverse import reverse
 
 from .utils import BaseTestingClass
-from my_app.models import Project
+from api.models import Project
 
 
 class WriteOnlyFieldPermissionTest(BaseTestingClass):

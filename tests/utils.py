@@ -3,7 +3,7 @@ from django.contrib.auth.hashers import make_password
 
 from rest_framework.test import APITestCase
 
-from my_app.models import Project
+from api.models import Project
 
 
 class BaseTestingClass(APITestCase):
