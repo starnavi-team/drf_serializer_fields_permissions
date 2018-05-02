@@ -1,7 +1,7 @@
 from rest_framework import serializers
+from rest_framework import permissions
 
 from .models import Project
-from .permissions import TeamMemberOrHide
 
 from fields_permissions.mixins import FieldPermissionMixin
 
@@ -14,9 +14,9 @@ class ProjectSerializer(FieldPermissionMixin, serializers.ModelSerializer):
 
         show_only_for = {
             'fields': ('team_lead_user',),
-            'permission_classes': (TeamMemberOrHide,)
+            'permission_classes': (permissions.IsAdminUser,)
         }
         write_only_for = {
             'fields': ('status', 'description'),
-            'permission_classes': (TeamMemberOrHide,)
+            'permission_classes': (permissions.IsAdminUser,)
         }
