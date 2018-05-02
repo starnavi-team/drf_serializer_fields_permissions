@@ -1,4 +1,4 @@
-django_rest_fields_permissions
+drf_fields_permissions
 ======================================
 
 |build-status-image| |pypi-version|
@@ -25,7 +25,7 @@ Install using ``pip``\ …
 
 .. code:: bash
 
-    $ pip install django_rest_fields_permissions
+    $ pip install drf_fields_permissions
 
 Example
 -------
@@ -83,4 +83,4 @@ globally, and then simply run:
 .. |build-status-image| image:: https://travis-ci.org/starnavi-team/django_rest_fields_permissions.svg?branch=master
    :target: https://travis-ci.org/starnavi-team/django_rest_fields_permissions?branch=master
 .. |pypi-version| image:: https://img.shields.io/pypi/v/django_rest_fields_permissions.svg
-   :target: https://pypi.python.org/pypi/django_rest_fields_permissions
+   :target: https://pypi.python.org/pypi/drf_fields_permissions

@@ -6,7 +6,7 @@ import sys
 from setuptools import setup
 
 
-name = 'django_rest_fields_permissions'
+name = 'drf_fields_permissions'
 package = 'fields_permissions'
 description = 'Permissions for django-rest fields'
 url = 'https://github.com/starnavi-team/django_rest_fields_permissions'
