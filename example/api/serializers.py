@@ -12,7 +12,7 @@ class ProjectSerializer(FieldPermissionMixin, serializers.ModelSerializer):
         model = Project
         fields = ('id', 'name', 'status', 'description', 'team_lead_user')
 
-        not_show_field_to = {
+        show_only_for = {
             'fields': ('team_lead_user',),
             'permission_classes': (TeamMemberOrHide,)
         }

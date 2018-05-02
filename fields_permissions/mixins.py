@@ -75,10 +75,10 @@ class FieldPermissionMixin:
 
     def _set_now_show_fields(self, fields, request, view):
 
-        not_show_field_to = self._get_permission_attribute('not_show_field_to')
+        show_only_for = self._get_permission_attribute('show_only_for')
 
         for now_show_fields in _permission_field_iterator(
-                not_show_field_to['fields'], not_show_field_to['permission_classes'], request, view):
+                show_only_for['fields'], show_only_for['permission_classes'], request, view):
             fields.pop(now_show_fields)
 
     def get_fields(self):
