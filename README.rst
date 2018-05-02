@@ -6,7 +6,10 @@ django_rest_fields_permissions
 Overview
 --------
 
-Permissions for django-rest fields
+This package provides a mixin for setting permissions to separate fields of ModelSerializer which uses `DRF permission
+classes`_. You can hide or set a field as read-only for specific users.
+
+.. _DRF permission classes: http://www.django-rest-framework.org/api-guide/permissions/
 
 Requirements
 ------------
