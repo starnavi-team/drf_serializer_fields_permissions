@@ -82,5 +82,5 @@ globally, and then simply run:
 
 .. |build-status-image| image:: https://travis-ci.org/starnavi-team/django_rest_fields_permissions.svg?branch=master
    :target: https://travis-ci.org/starnavi-team/django_rest_fields_permissions?branch=master
-.. |pypi-version| image:: https://pypi.org/project/drf-fields-permissions.svg
+.. |pypi-version| image:: https://img.shields.io/pypi/v/drf-fields-permissions.svg
    :target: https://pypi.org/project/drf-fields-permissions
