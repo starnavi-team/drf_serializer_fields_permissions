@@ -30,11 +30,11 @@ Install using ``pip``\ …
 Example
 -------
 
-To show a field only for staff users you need to add field show only to the `Meta` class of a serializer.
-`show_only_for` field must be a `dict` with two keys - `fields` and `permission_classes`.
-`permission_classes` is a `list` or a `tuple` of permission classes. You can use built-in DRF permission or create your
-own, but you must override `has_permission` method of `BasePermission` class.
-`fields` is list or tuple of serializer fields which will be shown only to staff users, in our case.
+To show a field only for staff users you need to add ``show_only_to`` field to the ``Meta`` class of a serializer.
+``show_only_for`` field must be a ``dict`` with two keys - ``fields`` and ``permission_classes``.
+``permission_classes`` is a ``list`` or a ``tuple`` of permission classes. You can use built-in DRF permission or create your
+own, but you must override ``has_permission`` method of ``BasePermission`` class.
+``fields`` is list or tuple of serializer fields which will be shown only to staff users, in our case.
 
 
 .. code:: python
