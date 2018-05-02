@@ -81,7 +81,7 @@ globally, and then simply run:
 
 .. _tox: http://tox.readthedocs.org/en/latest/
 
-.. |build-status-image| image:: https://travis-ci.org/starnavi-team/django_rest_fields_permissions.svg?branch=master
-   :target: https://travis-ci.org/starnavi-team/django_rest_fields_permissions?branch=master
-.. |pypi-version| image:: https://img.shields.io/pypi/v/django_rest_fields_permissions.svg
-   :target: https://pypi.python.org/pypi/drf_fields_permissions
+.. |build-status-image| image:: https://travis-ci.org/starnavi-team/drf_fields_permissions.svg?branch=master
+   :target: https://travis-ci.org/starnavi-team/drf_fields_permissions?branch=master
+.. |pypi-version| image:: https://img.shields.io/pypi/v/drf-fields-permissions.svg
+   :target: https://pypi.org/project/drf-fields-permissions
