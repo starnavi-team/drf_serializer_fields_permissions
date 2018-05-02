@@ -75,28 +75,6 @@ globally, and then simply run:
 
     $ tox
 
-Documentation
--------------
-
-To build the documentation, you’ll need to install ``mkdocs``.
-
-.. code:: bash
-
-    $ pip install mkdocs
-
-To preview the documentation:
-
-.. code:: bash
-
-    $ mkdocs serve
-    Running at: http://127.0.0.1:8000/
-
-To build the documentation:
-
-.. code:: bash
-
-    $ mkdocs build
-
 .. _tox: http://tox.readthedocs.org/en/latest/
 
 .. |build-status-image| image:: https://travis-ci.org/starnavi-team/django_rest_fields_permissions.svg?branch=master
