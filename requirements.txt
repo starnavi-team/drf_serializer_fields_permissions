@@ -1,5 +1,5 @@
 # Minimum Django and REST framework version
-Django==2.0.4
+Django==2.2.13
 djangorestframework==3.8.2
 pytz>=2018.4
 
