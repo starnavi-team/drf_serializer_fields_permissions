@@ -75,9 +75,9 @@ setup(
     packages=get_packages(package),
     package_data=get_package_data(package),
     install_requires=[
-        'Django>=2.0.4',
-        'djangorestframework>=3.8.2',
-        'pytz>=2018.4',
+        'Django>=4.2,<5.0',
+        'djangorestframework>=3.12,<3.15',
+        'pytz>=2022.6',
     ],
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
@@ -87,8 +87,9 @@ setup(
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Natural Language :: English',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.10'
+        'Programming Language :: Python :: 3.11'
+        'Programming Language :: Python :: 3.12'
         'Topic :: Internet :: WWW/HTTP',
     ]
 )
