@@ -3,6 +3,7 @@
 import re
 import os
 import sys
+
 from setuptools import setup
 
 
@@ -10,8 +11,8 @@ name = 'drf_fields_permissions'
 package = 'fields_permissions'
 description = 'Permissions for django-rest fields'
 url = 'https://github.com/starnavi-team/django_rest_fields_permissions'
-author = 'Andrii Pidlisnyi'
-author_email = 'andrii.pidlisnyi@gmail.com'
+author = 'starnavi.io'
+author_email = 'hello@starnavi.io'
 license = 'BSD'
 
 
@@ -75,9 +76,9 @@ setup(
     packages=get_packages(package),
     package_data=get_package_data(package),
     install_requires=[
-        'Django>=2.0.4',
-        'djangorestframework>=3.8.2',
-        'pytz>=2018.4',
+        'Django>=4.0,<5.0',
+        'djangorestframework>=3.13,<3.15',
+        'pytz>=2022.6',
     ],
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
@@ -87,8 +88,8 @@ setup(
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Natural Language :: English',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.10'
+        'Programming Language :: Python :: 3.11'
         'Topic :: Internet :: WWW/HTTP',
     ]
 )
