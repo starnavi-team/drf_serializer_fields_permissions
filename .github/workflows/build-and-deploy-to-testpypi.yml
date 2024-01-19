@@ -1,12 +1,10 @@
-name: Build & Deploy to TestPyPI
+name: Build & Publish to TestPyPI
 
 on:
   push:
     tags:
       - 'v*'
       - 'release*'
-    branches:
-      - update-python-dfr-django-versions
 
 jobs:
   testing:
