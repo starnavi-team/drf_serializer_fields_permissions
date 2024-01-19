@@ -10,7 +10,7 @@ from setuptools import setup
 name = 'drf_fields_permissions'
 package = 'fields_permissions'
 description = 'Permissions for django-rest fields'
-url = 'https://github.com/starnavi-team/django_rest_fields_permissions'
+url = 'https://github.com/BohdanYatsyna/drf_fields_permissions'
 author = 'starnavi.io'
 author_email = 'hello@starnavi.io'
 license = 'BSD'
@@ -53,16 +53,17 @@ def get_package_data(package):
 version = get_version(package)
 
 
-if sys.argv[-1] == 'publish':
-    if os.system("pip freeze | grep wheel"):
-        print("wheel not installed.\nUse `pip install wheel`.\nExiting.")
-        sys.exit()
-    os.system("python setup.py sdist upload")
-    os.system("python setup.py bdist_wheel upload")
-    print("You probably want to also tag the version now:")
-    print("  git tag -a {0} -m 'version {0}'".format(version))
-    print("  git push --tags")
-    sys.exit()
+# # setup for manual publishing to PyPI
+# if sys.argv[-1] == 'publish':
+#     if os.system("pip freeze | grep wheel"):
+#         print("wheel not installed.\nUse `pip install wheel`.\nExiting.")
+#         sys.exit()
+#     os.system("python setup.py sdist upload")
+#     os.system("python setup.py bdist_wheel upload")
+#     print("You probably want to also tag the version now:")
+#     print("  git tag -a {0} -m 'version {0}'".format(version))
+#     print("  git push --tags")
+#     sys.exit()
 
 
 setup(
@@ -88,8 +89,8 @@ setup(
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Natural Language :: English',
-        'Programming Language :: Python :: 3.10'
-        'Programming Language :: Python :: 3.11'
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
         'Topic :: Internet :: WWW/HTTP',
     ]
 )
