@@ -7,7 +7,7 @@ import sys
 from setuptools import setup
 
 
-name = 'drf_fields_permissions'
+name = 'drf_fields_permissions_1'
 package = 'fields_permissions'
 description = 'Permissions for django-rest fields'
 url = 'https://github.com/BohdanYatsyna/drf_fields_permissions'
