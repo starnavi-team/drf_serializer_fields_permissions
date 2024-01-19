@@ -1,4 +1,4 @@
-name: Build & Publish to TestPyPI
+name: Test, Build & Publish to PyPI
 
 on:
   push:
@@ -33,11 +33,12 @@ jobs:
           tox
 
   build-and-publish:
-    name: Build and publish Python distribution to TestPyPI
+    name: Build and publish Python distribution to PyPI
     runs-on: ubuntu-latest
     needs: testing
     environment:
-      name: testpypi
+      name: pypi
+      url: https://pypi.org/p/drf-fields-permissions/
     permissions:
       id-token: write
     steps:
@@ -56,9 +57,8 @@ jobs:
           python -m pip install --upgrade build
           python -m build
 
-      - name: Publish package to TestPyPI
+      - name: Publish package to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          verbose: true # For Debugging
-          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
-          repository-url: https://test.pypi.org/legacy/
+          verbose: true # For Debugging in case of errors
+          password: ${{ secrets.PYPI_API_TOKEN }}
