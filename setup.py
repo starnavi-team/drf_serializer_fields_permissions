@@ -66,12 +66,17 @@ version = get_version(package)
 #     sys.exit()
 
 
+with open('README.rst', 'r', encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
     name=name,
     version=version,
     url=url,
     license=license,
     description=description,
+    long_description=long_description,
+    long_description_content_type='text/x-rst',
     author=author,
     author_email=author_email,
     packages=get_packages(package),
