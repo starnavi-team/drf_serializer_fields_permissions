@@ -1,7 +1,7 @@
 drf_fields_permissions
 ======================================
 
-|build-status-image| |pypi-version|
+|pypi-version|
 
 Overview
 --------
@@ -14,14 +14,14 @@ classes`_. You can hide or set a field as read-only for specific users.
 Requirements
 ------------
 
--  Python (3.5, 3.6)
--  Django (2.0)
--  Django REST Framework (3.8)
+-  Python (3.10, 3.11)
+-  Django (4.0, 4.1, 4.2)
+-  Django REST Framework (3.13, 3.14)
 
 Installation
 ------------
 
-Install using ``pip``\ …
+Install using ``pip``\
 
 .. code:: bash
 
@@ -88,7 +88,5 @@ globally, and then simply run:
 
 .. _tox: http://tox.readthedocs.org/en/latest/
 
-.. |build-status-image| image:: https://travis-ci.org/starnavi-team/drf_fields_permissions.svg?branch=master
-   :target: https://travis-ci.org/starnavi-team/drf_fields_permissions?branch=master
 .. |pypi-version| image:: https://img.shields.io/pypi/v/drf-fields-permissions.svg
    :target: https://pypi.org/project/drf-fields-permissions
