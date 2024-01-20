@@ -1,15 +1,15 @@
-# Minimum Django and REST framework version
-Django>=4.0,<5.0
-djangorestframework>=3.13,<3.15
-pytz>=2022.6
+# Django and REST framework versions
+Django>=2.0.4,<5.0
+djangorestframework>=3.8.2,<3.15
+pytz>=2018.4
 
 -e .
 
 # Test requirements
-pytest-django>=4.6.0,<=4.7.0
-pytest>=7.2.1,<=7.4.4
-pytest-cov==4.1.0
-flake8==7.0.0
+pytest-django>=3.2.1,<=4.7.0
+pytest>=3.5.1,<=7.4.4
+pytest-cov
+flake8>=3.5.0,==7.0.0
 
 # wheel for PyPI installs
 wheel
