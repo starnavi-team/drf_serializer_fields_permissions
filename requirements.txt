@@ -9,11 +9,11 @@ pytz>=2018.4
 pytest-django>=3.2.1,<=4.7.0
 pytest>=3.5.1,<=7.4.4
 pytest-cov
-flake8>=3.5.0,==7.0.0
+flake8>=3.5.0,<=7.0.0
 
 # wheel for PyPI installs
 wheel
-twine==4.0.2
+twine>=1.11.0,<=4.0.2
 
 # MkDocs for documentation previews/deploys
 mkdocs
