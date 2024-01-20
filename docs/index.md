@@ -1,4 +1,4 @@
-![PyPI Version](https://img.shields.io/pypi/v/drf-fields-permissions.svg)
+![PyPI Version](https://img.shields.io/pypi/v/drf-serializer-fields-permissions.svg)
 
 ---
 # drf_serializer_fields_permissions

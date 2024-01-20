@@ -88,5 +88,5 @@ globally, and then simply run:
 
 .. _tox: http://tox.readthedocs.org/en/latest/
 
-.. |pypi-version| image:: https://img.shields.io/pypi/v/drf-fields-permissions.svg
-   :target: https://pypi.org/project/drf-fields-permissions
+.. |pypi-version| image:: https://img.shields.io/pypi/v/drf-serializer-fields-permissions.svg
+   :target: https://pypi.org/project/drf-serializer-fields-permissions
