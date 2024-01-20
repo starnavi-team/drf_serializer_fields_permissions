@@ -5,12 +5,10 @@ on:
     tags:
       - 'v*'
       - 'release*'
-    branches:
-      - update-python-dfr-django-versions
 
 jobs:
   testing-on-py-35-36:
-    name: Run Tests with Tox for Python 3.5 & 3.6
+    name: Tox testing for Python 3.5 & 3.6
     runs-on: ubuntu-20.04
     strategy:
       matrix:
@@ -35,7 +33,7 @@ jobs:
           tox
 
   testing-on-py-37-38-39-310-311:
-    name: Run Tests with Tox for Python 3.7, 3.8, 3.9, 3.10 & 3.11
+    name: Tox testing for Python 3.7, 3.8, 3.9, 3.10 & 3.11
     runs-on: ubuntu-22.04
     strategy:
       matrix:
@@ -60,14 +58,14 @@ jobs:
           tox
 
   build-and-publish:
-    name: Build and publish Python distribution to TestPyPI
+    name: Build and publish Python distribution to PyPI
     runs-on: ubuntu-latest
     needs:
       - testing-on-py-35-36
       - testing-on-py-37-38-39-310-311
     environment:
-      name: testpypi
-#      url: https://pypi.org/p/drf-fields-permissions/
+      name: pypi
+      url: https://pypi.org/p/drf-serializer-fields-permissions/
     permissions:
       id-token: write
     steps:
@@ -86,9 +84,8 @@ jobs:
           python -m pip install --upgrade build
           python -m build
 
-      - name: Publish package to TestPyPI
+      - name: Publish package to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           verbose: true # For Debugging in case of errors
-          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
-          repository-url: https://test.pypi.org/legacy/
+          password: ${{ secrets.PYPI_API_TOKEN }}
