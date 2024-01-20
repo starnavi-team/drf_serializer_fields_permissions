@@ -1,4 +1,4 @@
-drf_fields_permissions
+drf_serializer_fields_permissions
 ======================================
 
 |pypi-version|
@@ -14,9 +14,9 @@ classes`_. You can hide or set a field as read-only for specific users.
 Requirements
 ------------
 
--  Python (3.10, 3.11)
--  Django (4.0, 4.1, 4.2)
--  Django REST Framework (3.13, 3.14)
+-  Python (3.5, 3.6, 3.7, 3.8, 3.9, 3.10, 3.11)
+-  Django (2.0, 2.1, 2.2, 3.0, 3.1, 3.2, 4.0, 4.1, 4.2)
+-  Django REST Framework (3.8, 3.9, 3.10, 3.11, 3.12, 3.13, 3.14)
 
 Installation
 ------------
@@ -25,7 +25,7 @@ Install using ``pip``\
 
 .. code:: bash
 
-    $ pip install drf_fields_permissions
+    $ pip install drf_serializer_fields_permissions
 
 Example
 -------
