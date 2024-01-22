@@ -17,6 +17,6 @@ lib/
 local/
 
 !.gitignore
-!.travis.yml
+!.github
 
 db.sqlite3
